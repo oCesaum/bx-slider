@@ -25,3 +25,36 @@
   background-size: cover;
   background-position: center center;
 }
+
+.bx-custom-pager {
+  width: fit-content;
+  height: 100px;
+  margin: 0 auto 50px;
+}
+
+.bx-custom-pager ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.bx-custom-pager li {
+  width: 100px;
+  height: 100px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bx-custom-pager li:hover {
+  background-size: 250px;
+}
+
+.bx-custom-pager li a {
+  padding: 42px;
+  color: transparent;
+}

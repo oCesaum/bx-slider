@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bx-slider</title>
 
+    <link rel="shortcut icon" href="images/favico.jpg" type="image/x-icon">
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="jquery.bxslider.css" />
   </head>
@@ -21,15 +23,39 @@
       </ul>
     </div>
 
+    <div class="bx-custom-pager">
+      <ul>
+        <li style="background-image: url(images/1.png)">
+          <a data-slide-index="0" href="">01</a>
+        </li>
+        <li style="background-image: url(images/2.png)">
+          <a data-slide-index="1" href="">02</a>
+        </li>
+        <li style="background-image: url(images/3.png)">
+          <a data-slide-index="2" href="">03</a>
+        </li>
+        <li style="background-image: url(images/4.png)">
+          <a data-slide-index="3" href="">04</a>
+        </li>
+        <li style="background-image: url(images/5.jpg)">
+          <a data-slide-index="4" href="">04</a>
+        </li>
+        <li style="background-image: url(images/6.jpg)">
+          <a data-slide-index="5" href="">04</a>
+        </li>
+      </ul>
+    </div>
+
     <script src="jquery-3.1.1.min.js"></script>
     <script src="jquery.bxslider.js"></script>
     <script>
       var slSlider = $('#slider-area').bxSlider({
         auto: true,
-        onSlideAfter: function() {
-          slSlider.startAuto();
+        pagerCustom: '.bx-custom-pager',
+        onSlideAfter: function () {
+          slSlider.startAuto()
         }
-      });
+      })
     </script>
   </body>
 </html>
