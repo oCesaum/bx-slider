@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 40px auto;
+}
+
+.bx-wrapper {
+  left: 0;
+  box-shadow: none;
+  border: none;
+  margin-bottom: 0;
+}
+
+.bx-viewport {
+  height: 500px !important;
+}
+
+#slider-area li {
+  height: 100vh;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}

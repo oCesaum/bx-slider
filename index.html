@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bx-slider</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="jquery.bxslider.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <ul id="slider-area">
+        <li style="background-image: url(images/1.png)"></li>
+        <li style="background-image: url(images/2.png)"></li>
+        <li style="background-image: url(images/3.png)"></li>
+        <li style="background-image: url(images/4.png)"></li>
+        <li style="background-image: url(images/5.jpg)"></li>
+        <li style="background-image: url(images/6.jpg)"></li>
+      </ul>
+    </div>
+
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="jquery.bxslider.js"></script>
+    <script>
+      var slSlider = $('#slider-area').bxSlider({
+        auto: true,
+        onSlideAfter: function() {
+          slSlider.startAuto();
+        }
+      });
+    </script>
+  </body>
+</html>
